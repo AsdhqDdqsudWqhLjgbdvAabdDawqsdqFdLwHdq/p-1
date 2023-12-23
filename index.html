@@ -16,7 +16,9 @@
   <link rel="apple-touch-icon" href="favicon.ico">
   <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'/>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/script/translate.js"></script>
   <script src="assets/script/particles.js"></script>
+  <script src="assets/script/metrika.js"></script>
   </head>
 <script>
 particlesJS.load('particles-js', 'assets/script/particles.json', function() {
@@ -464,29 +466,4 @@ ul {
 	left: 0;
 }
 </style>
-<script>
-$(document).ready(function() {
-    var translations = {
-      en: {
-          guilds: 'Guilds',
-          meta: 'NoHello',
-      },
-      ru: {
-          guilds: 'Гильдии',
-          meta: 'Мета',
-      }
-    };    
-    var userLanguage = navigator.language || navigator.userLanguage;
-    var currentLanguage = translations[userLanguage.substr(0, 2)] ? userLanguage.substr(0, 2) : 'en';
-
-    translate(currentLanguage);
-
-    function translate(language) {
-      $('[data-translate]').each(function() {
-        var key = $(this).data('translate');
-        $(this).html(translations[language][key]);
-      });
-    }
- });
-</script>
 </html>

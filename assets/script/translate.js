@@ -9,8 +9,8 @@ $(document).ready(function() {
           meta: 'Мета',
       }
     };    
-    var userLanguage = navigator.language.substr(0, 2);
-    var currentLanguage = translations[userLanguage] ? userLanguage : 'en';
+    var userLanguage = navigator.language || navigator.userLanguage;
+    var currentLanguage = translations[userLanguage.substr(0, 2)] ? userLanguage.substr(0, 2) : 'en';
 
     translate(currentLanguage);
 
@@ -20,4 +20,4 @@ $(document).ready(function() {
         $(this).html(translations[language][key]);
       });
     }
-  });
+ });
