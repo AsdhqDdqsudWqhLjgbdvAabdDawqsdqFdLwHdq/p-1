@@ -467,4 +467,12 @@ ul {
 	left: 0;
 }
 </style>
+<script>
+  window.addEventListener("mousewheel", function(e) {
+    if (e.ctrlKey) {
+      e.preventDefault();
+      return false;
+    }
+  });
+</script>
 </html>
