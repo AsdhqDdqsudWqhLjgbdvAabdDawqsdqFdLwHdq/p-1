@@ -468,11 +468,10 @@ ul {
 }
 </style>
 <script>
-  window.addEventListener("mousewheel", function(e) {
-    if (e.ctrlKey) {
-      e.preventDefault();
-      return false;
+rbrd.onwheel = function() {
+    if(event.ctrlKey) {
+        return false;
     }
-  });
+}
 </script>
 </html>
