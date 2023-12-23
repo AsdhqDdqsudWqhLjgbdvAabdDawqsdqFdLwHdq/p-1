@@ -15,6 +15,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="favicon.ico">
   <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'/>
+  <script src="assets/script/translate.js"></script>
   <script src="assets/script/particles.js"></script>
   </head>
 <script>
@@ -463,29 +464,4 @@ ul {
 	left: 0;
 }
 </style>
-  <script>
-    $(document).ready(function() {
-          var translations = {
-            en: {
-                guilds: 'Guilds',
-                meta: 'NoHello',
-            },
-            ru: {
-                guilds: 'Гильдии',
-                meta: 'Мета',
-            }
-          };    
-          var userLanguage = navigator.language.substr(0, 2);
-          var currentLanguage = translations[userLanguage] ? userLanguage : 'en';
-    
-          translate(currentLanguage);
-    
-          function translate(language) {
-            $('[data-translate]').each(function() {
-              var key = $(this).data('translate');
-              $(this).html(translations[language][key]);
-            });
-          }
-        });
-</script>
 </html>
