@@ -15,7 +15,6 @@
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="favicon.ico">
   <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'/>
-  <script src="assets/script/translate.js"></script>
   <script src="assets/script/particles.js"></script>
   </head>
 <script>
@@ -476,8 +475,8 @@ $(document).ready(function() {
           meta: 'Мета',
       }
     };    
-    var userLanguage = navigator.language.substr(0, 2);
-    var currentLanguage = translations[userLanguage] ? userLanguage : 'en';
+    var userLanguage = navigator.language || navigator.userLanguage;
+    var currentLanguage = translations[userLanguage.substr(0, 2)] ? userLanguage.substr(0, 2) : 'en';
 
     translate(currentLanguage);
 
@@ -487,6 +486,6 @@ $(document).ready(function() {
         $(this).html(translations[language][key]);
       });
     }
-  });
+ });
 </script>
 </html>
