@@ -60,14 +60,6 @@ particlesJS.load('particles-js', 'assets/script/particles.json', function() {
   padding: 0;
 }
 
-#s {
-    -moz-user-select: none; 
-    -webkit-user-select: none; 
-    -ms-user-select: none; 
-    -o-user-select: none; 
-    user-select: none;
-}
-
 html, body {
     background-color: #232323;
     font-size: 15px;
@@ -565,7 +557,7 @@ let timer=setTimeout("movesnow()",50)
 }
 
 for (i=0;i<=snowmax;i++) {
-document.body.insertAdjacentHTML("beforeend", "<span id='s"+i+"' style='pointer-events:none;user-select:none;position:fixed;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+document.body.insertAdjacentHTML("beforeend", "<span id='s"+i+"' style='pointer-events:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-o-user-select:none; user-select:none;position:fixed;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
 }
 window.onload=initsnow    
 </script>
