@@ -1,4 +1,3 @@
-<script>
 // количество снежинок, которое будет на экране одновременно.
 let snowmax=35
 
@@ -88,4 +87,3 @@ for (i=0;i<=snowmax;i++) {
 document.body.insertAdjacentHTML("beforeend", "<span id='s"+i+"' style='pointer-events:none;user-select:none;position:fixed;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
 }
 window.onload=initsnow    
-</script>
