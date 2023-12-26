@@ -1,96 +1,101 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr">
+<html lang="ru">
   <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"">
-  <meta name="og:type" content="website"/>	
-  <meta name="og:site_name" content=""/>	
-  <meta name="apple-mobile-web-app-title" content="Permach">
-  <meta name="og:title" content="Permach"/>
-  <meta name="og:description" content="This is a website."/>	
-  <meta name="description" content="This is a website."/>
-  <meta name="og:url" content="https://permach.xyz/"/>
-  <meta name="twitter:title" content="Permach"/>
-  <meta name="twitter:description" content="This is a website."/>	
-  <meta name="twitter:url" content="https://permach.xyz/"/>
-  <meta name="theme-color" content="#000000"/>
-  <title>Permach</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="favicon.ico">
-  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'/>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="assets/script/translate.js"></script>
-  <script src="assets/script/particles.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FFF8FD">
+    <link rel="icon" type="image/png" href="images/hemy.png">
+    <meta name="description" content="Привет! Я hemydev, лучший разраб в сфере IT. Тут указаны мои работы и контакты">
+    <meta name="og:title" content="HemyDev - Developer & Designer">
+    <meta name="og:description" content="Привет! Я hemydev, лучший разраб в сфере IT. Тут указаны мои работы и контакты">
+    <meta name="og:url" content="https://hemydev.ru">
+    <meta name="og:type" content="website">
+    <meta name="twitter:title" content="HemyDev - Developer & Designer">
+    <meta name="twitter:description" content="Привет! Я hemydev, лучший разраб в сфере IT. Тут указаны мои работы и контакты">
+    <meta name="twitter:url" content="https://hemydev.ru">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/hemy.png" rel="shortcut icon" type="image/x-icon">
+    <title>HemyDev.ru | Developer & Designer</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/script/menu.js"></script>
+    <script src="assets/script/snow.js"></script>
   </head>
-<script>
-particlesJS.load('particles-js', 'assets/script/particles.json', function() {
-  console.log('');
-});
-</script>
-<body>
-<div id="particles-js"></div>
-  <div class="container">
-    <nav class="main-nav">
-      <a href=""><img src="favicon.ico" alt="logo" class="logo"></a>
-      <ul class="main-menu">
-        <li><a data-translate="guilds" href="//guilds.permach.xyz" target="_blank">Гильдии</a></li>
-        <li><a data-translate="meta" href="//nohello.permach.xyz" target="_blank">Мета</a></li>
-      </ul>
+  <body>
+    <header class="header">
+      <a href="" class="logo">Permach</a>
+      <nav class="navbar">
+      <a href="" class="active">Главная</a>
+      <a href="//guilds.permach.xyz">Гильдии</a>
+      <a href="//nohello.permach.xyz">Мета</a>
     </nav>
-</div>
-  <div class="content">
-    <div class="info">
-        <div id="avatar-border"><img id="avatar" src="assets/img/permach.png"></div>
-        <span id="title">Permach</span>
-        <span id="desc">Junior Web Developer</span>
-    </div>
-    <div class="social">
-    <a href="//discord.permach.xyz" target="_blank"><i class="bx bxl-discord-alt"></i></a>
-    <a href="//steam.permach.xyz" target="_blank"><i class="bx bxl-steam"></i></a>
-    <a href="//telegram.permach.xyz" target="_blank"><i class="bx bxl-telegram"></i></a>
-    </div>
-  </div>
-<div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1324" height="939"></canvas></div>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+  <section class="home" id="home">
+      <div class="home-content">
+        <img src="https://cdn.discordapp.com/avatars/687661528337350705/d3b09787e3d189bd3b928812d7c6239b.webp?size=1024&format=webp&width=0&height=204" class="home-img">
+        <h1>Permach</h1>
+        <h3>Junior Web Developer</h3>
+        <div class="social-media">
+          <a href="//discord.permach.xyz" target="_blank"><i class="bx bxl-discord-alt"></i></a>
+          <a href="//steam.permach.xyz" target="_blank"><i class="bx bxl-steam"></i></a>
+          <a href="//telegram.permach.xyz" target="_blank"><i class="bx bxl-telegram"></i></a>
+        </div>
+      </div>
 </body>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
-html, body {
-    background-color: #232323;
-    font-size: 15px;
-    touch-action: none;
-    line-height: 1.5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
-    -webkit-text-size-adjust: none;
+:root {
+    --bg-color: #0b061f;
+    --text-color: #fdfdfd;
+    --main-color: #754ef9;
+    --social-color: #fff;
+    --hover-color: rgb(255, 123, 222);
+    --shadow-color: rgba(0, 0, 0, .2);
 }
 
-a {
-  text-decoration: none;
-  z-index: 1000;
-  color: #fff;
+*::selection {
+    background: var(--main-color);
+    color: var(--bg-color);
 }
 
-ul {
-  list-style: none;
-  z-index: 1000;
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
-.container {
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #303030;
-    color: #fff;
-    padding: 10px;
-    z-index: 1001;
-    box-shadow: 0 1px 10px 0 black;
+    padding: 2rem 7%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transition: .5s;
     -moz-user-select: none; 
     -webkit-user-select: none; 
     -ms-user-select: none; 
@@ -98,107 +103,75 @@ ul {
     user-select: none;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
+.logo {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-right: auto;
 }
 
-.main-menu {
-  display: flex;
+.navbar a {
+    position: relative;
+    font-size: 1.7rem;
+    color: var(--white-color);
+    font-weight: 500;
+    margin-right: 3.5rem;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #fff;
-  height: 60px;
-  padding: 20px 0;
-  z-index: 1001;
-  font-size: 20px;
+.navbar a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: .2rem;
+    background: var(--white-color);
 }
 
-.main-nav .logo {
-  width: 50px;
-  margin-left: 25px;
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
 }
 
-.main-nav ul {
-  text-align: right;
+section {
+    min-height: 100vh;
+    padding: 10rem 7% 2rem;
 }
 
-.main-nav ul li {
-  padding: 0 10px;
-}
-
-.main-nav ul li a {
-  padding-bottom: 2px;
-}
-
-.main-nav ul li a:hover {
-  border-bottom: 2px solid #fff;
-}
-
-.info {
+.home {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-#avatar-border {
-    z-index: 1000;
+.home .home-content {
+    max-width: 44rem;
 }
 
-#avatar {
-    -webkit-animation-name: border;
-	  -webkit-animation-duration: 6.0s;
-   	-webkit-animation-iteration-count: infinite;
-	  -webkit-animation-timing-function: linear;
-    border-radius: 50%;
-}
-
-#avatar::selection {
-    background-color: #185c66;
-}
-
-#title {
-    font-size: 3.5em;
-    color: #fff;
-    font-weight: bold;
-    font-family: Arial;
-    z-index: 1000;
-}
-
-#title::selection {
-    background-color: #185c66;
-}
-
-#desc {
-    font-size: 2em;
-    font-family: Arial;
-    z-index: 1000;
+.home-content h3 {
+    font-size: 3.2rem;
     font-weight: 700;
-    color: #7e7e7e;
+    line-height: .3;
 }
 
-#desc::selection {
-    background-color: #185c66;
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: .3rem;
 }
 
-.social {
-  display: inline-block;
-  justify-content: center;
-  flex-flow: row wrap;
-  position: fixed;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 65px;
-  color: #fff;
-  z-index: 1000;
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.home-img {
+  -webkit-animation-name: border;
+	-webkit-animation-duration: 6.0s;
+  -webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+  border-radius: 50%;
+  width: 75%;
   -moz-user-select: none; 
   -webkit-user-select: none; 
   -ms-user-select: none; 
@@ -206,13 +179,57 @@ ul {
   user-select: none;
 }
 
-.social a {
-    transition: 0.3s;
+.home-content .social-media {
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    -o-user-select: none; 
+    user-select: none;
 }
 
-.social a:hover {
-    color: rgb(255, 123, 222);
+.home-content .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 10rem;
+    font-size: 5rem;
+    color: var(--social-color);
+    transition: .5s ease;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    -o-user-select: none; 
+    user-select: none;
 }
+
+.home-content .social-media a:hover {
+    color: var(--hover-color);
+}
+
+.home .profession-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.home .profession-container .profession-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 768px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: professionRotate 13s ease-out infinite;
+}
+
 @-webkit-keyframes border 
 {
 	0% 
@@ -230,335 +247,290 @@ ul {
 		-webkit-transform: rotateZ(360deg);
 	}
 }
-@media screen and (max-width: 1920px) {
-  #avatar-border {
-    height: 200px;
-    width: 200px;
-  }
-  #avatar {
-    height: 200px;
-    width: 200px;
-  }
-  #title {
-    font-size: 2.5em;
-  }
-  #desc {
-    font-size: 1.2em;
-  }
-  .social {
-    font-size: 55px;
-  }
-}
 
-@media screen and (max-width: 1200px) {
-  #avatar-border {
-    height: 150px;
-    width: 150px;
-  }
-  #avatar {
-    height: 150px;
-    width: 150px;
-  }
-  #title {
-    font-size: 2em;
-  }
-  #desc {
-    font-size: 1em;
-  }
-  .social {
-    font-size: 45px;
-  }
-}
+@keyframes professionRotate {
 
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
-  .main-nav {
-    padding: 10px 0;
-    font-size: 15px;
-  }
-  .main-nav .logo {
-    width: 50px;
-    margin-left: 15px;
-  }
-  .main-nav ul.main-menu {
-    margin-left: 10px;
-  }
-  #avatar-border {
-    height: 200px;
-    width: 200px;
-  }
-  #avatar {
-    height: 200px;
-    width: 200px;
-  }
-  #title {
-    font-size: 3em;
-  }
-  #desc {
-    font-size: 1.5em;
-  }
-  .social {
-    font-size: 55px;
-  }
-}
+    0%,
+    20% {
+        transform: rotate(0deg);
+    }
 
-@media screen and (max-height: 480px) {
-  .container {
-    height: 65px;
-  }
-  .main-nav {
-    padding: 10px 0;
-    font-size: 12.5px;
-  }
-  .main-nav .logo {
-    width: 35px;
-    margin-left: 15px;
-  }
-  #avatar-border {
-    height: 100px;
-    width: 100px;
-  }
-  #avatar {
-    height: 100px;
-    width: 100px;
-  }
-  #title {
-    font-size: 1.5em;
-  }
-  #desc {
-    font-size: 0.8em;
-  }
-  .social {
-    font-size: 35px;
-  }
-}
+    25%,
+    45% {
+        transform: rotate(-90deg);
+    }
 
-@media screen and (max-width: 480px) {
-  #avatar-border {
-    height: 150px;
-    width: 150px;
-  }
-  #avatar {
-    height: 150px;
-    width: 150px;
-  }
-  #title {
-    font-size: 2.5em;
-  }
-  #desc {
-    font-size: 1.2em;
-  }
-  .social {
-    font-size: 45px;
-  }
-}
+    50%,
+    70% {
+        transform: rotate(-180deg);
+    }
 
-@media screen and (max-height: 320px) {
-  .container {
-    height: 62.5px;
-  }
-  .main-nav {
-    padding: 10px 0;
-    font-size: 11.5px;
-  }
-  .main-nav .logo {
-    width: 35px;
-    margin-left: 15px;
-  }
-  #avatar-border {
-    height: 90px;
-    width: 90px;
-  }
-  #avatar {
-    height: 90px;
-    width: 90px;
-  }
-  #title {
-    font-size: 1.25em;
-  }
-  #desc {
-    font-size: 0.6em;
-  }
-  .social {
-    font-size: 35px;
-  }
-}
+    75%,
+    95% {
+        transform: rotate(-270deg);
+    }
 
-@media screen and (min-width: 200px) and (max-width: 270px) {
-  .container {
-    height: 65px;
-  }
-  .main-nav {
-    padding: 10px 0;
-    font-size: 10.5px;
-  }
-  .main-nav .logo {
-    width: 35px;
-    margin-left: 15px;
-  }
-  #avatar-border {
-    height: 75px;
-    width: 75px;
-  }
-  #avatar {
-    height: 75px;
-    width: 75px;
-  }
-  #title {
-    font-size: 1.2em;
-  }
-  #desc {
-    font-size: 0.8em;
-  }
-  .social {
-    font-size: 30px;
-  }
-}
-
-@media screen and (min-height: 200px) and (max-height: 270px) {
-  .content {
-    height: 105vh;
-  }
-  .container {
-    height: 65px;
-  }
-  .main-nav {
-    padding: 10px 0;
-    font-size: 11.5px;
-  }
-  .main-nav .logo {
-    width: 35px;
-    margin-left: 15px;
-  }
-  #avatar-border {
-    height: 65px;
-    width: 65px;
-  }
-  #avatar {
-    height: 65px;
-    width: 65px;
-  }
-  #title {
-    font-size: 0.9em;
-  }
-  #desc {
-    font-size: 0.5em;
-  }
-  .social {
-    font-size: 25px;
-  }
-}
-#particles-js canvas {
-	display: block;
-	vertical-align: bottom;
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-	opacity: 1;
-	-webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
-	transition: opacity .8s ease, transform 1.4s ease
-}
-
-#particles-js {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	z-index: 1;
-	top: 50px;
-	left: 0;
-}
-</style>
-<script>
-// количество снежинок, которое будет на экране одновременно.
-let snowmax=25
-
-// Цвета для снежинок. Для каждой конкретной снежинки цвет выбирается случайно из этого массива.
-let snowcolor=new Array("#b9dff5","#7fc7ff","#7fb1ff","#7fc7ff","#b9dff5")
-
-// Шрифт для снежинок
-let snowtype=new Array("Times")
-
-// Символ (*) и есть снежинка, в место нее можно вставить любой другой символ.
-let snowletter="&#10052;"
-
-// Скорость движения снежинок (от 0.3 до 2)
-let sinkspeed=2
-
-// Максимальный размер для снежинок
-let snowmaxsize=38
-
-// Минимальный размер для снежинок
-let snowminsize=4
-
-// Зона для снежинок
-// 1 для всей страницы, 2 в левой части страницы
-// 3 в центральной части, 4 в правой части страницы
-let snowingzone=1
-
-////////////////////////
-///////// Конец настроек
-////////////////////////
-
-let snow=new Array();
-let marginbottom;
-let marginright;
-let timer;
-let i_snow=0;
-let x_mv=new Array();
-let crds=new Array();
-let lftrght=new Array();
-function randommaker(range) {
-rand=Math.floor(range*Math.random());
-return rand;
-}
-function initsnow() {
-marginbottom = document.documentElement.clientHeight+50
-marginright = document.body.clientWidth-15
-let snowsizerange=snowmaxsize-snowminsize
-for (i=0;i<=snowmax;i++) {
-    crds[i] = 0;
-    lftrght[i] = Math.random()*15;
-    x_mv[i] = 0.03 + Math.random()/10;
-    snow[i]=document.getElementById("s"+i)
-    snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
-    snow[i].size=randommaker(snowsizerange)+snowminsize
-    snow[i].style.fontSize=snow[i].size+'px';
-    snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
-    snow[i].style.zIndex=1000
-    snow[i].sink=sinkspeed*snow[i].size/5
-    if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
-    if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
-    if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
-    if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
-    snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
-    snow[i].style.left=snow[i].posx+'px';
-    snow[i].style.top=snow[i].posy+'px';
-}
-movesnow()
-}
-function movesnow() {
-for (i=0;i<=snowmax;i++) {
-    crds[i] += x_mv[i];
-    snow[i].posy+=snow[i].sink
-    snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i])+'px';
-    snow[i].style.top=snow[i].posy+'px';
-    
-    if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
-        if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
-        if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
-        if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
-        if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
-        snow[i].posy=0
+    100% {
+        transform: rotate(-360deg);
     }
 }
-let timer=setTimeout("movesnow()",50)
+
+.home .profession-box .profession {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--main-color);
+    transform: rotate(calc(360deg / 4 * var(--i)));
+    transform-origin: 384px;
+    background: var(--bg-color);
+    padding: 13px 0;
 }
 
-for (i=0;i<=snowmax;i++) {
-document.body.insertAdjacentHTML("beforeend", "<span id='s"+i+"' style='pointer-events:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-o-user-select:none; user-select:none;position:fixed;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+.home .profession-box .profession:nth-child(1) i {
+    margin-right: 15px;
 }
-window.onload=initsnow    
-</script>
+
+.home .profession-box .profession:nth-child(2),
+.home .profession-box .profession:nth-child(4) {
+    padding-bottom: 20px;
+}
+
+.home .profession i {
+    font-size: 3.8rem;
+}
+
+.home .profession h3 {
+    font-size: 3.2rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.home .profession-box .circle {
+    width: 560px;
+    height: 560px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.home .profession-container .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 50vh solid var(--main-color);
+    border-right: 384px solid var(--main-color);
+    border-bottom: 50vh solid var(--main-color);
+    border-left: 384px solid transparent;
+}
+
+.home-img img {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    pointer-events: none;
+    max-width: 480px;
+    max-height: 100vh;
+}
+
+span {
+    color: var(--main-color);
+}
+
+@media (max-width: 1200px) {
+    html {
+      font-size: 55%;
+    }
+    .home .profession-container .profession-box {
+      right: -10%;
+    }
+    .home .profession-container .overlay {
+      right: -6%;
+    }
+}
+@media (max-width: 1100px) {
+    .home .profession-container .profession-box {
+      right: -15%;
+    }
+    .home-img img {
+      max-width: 420px;
+    }
+}
+@media (max-width: 1024px) {
+    .header {
+      padding: 2rem 3%;
+    }
+    section {
+      padding: 10rem 3% 2rem;
+    }
+    .home .profession-container .profession-box {
+      right: -20%;
+    }
+    .home .profession-container .overlay {
+      right: -12%;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar a:nth-child(1) {
+      color: var(--main-color);
+    }
+    .navbar a.active::before {
+      background: var(--main-color);
+      opacity: .7;
+    }
+    .home .home-content {
+      max-width: 50rem;
+    }
+    .home .profession-container .profession-box {
+      right: -35%;
+    }
+    .home .profession-container .overlay {
+      right: -30%;
+    }
+}
+
+@media (max-width: 896px) {
+    .home .profession-container .profession-box {
+      right: -50%;
+    }
+    .home .profession-container .overlay {
+      right: -43%;
+    }
+}
+
+@media (max-width: 780px) {
+    .navbar a:nth-child(2) {
+      color: var(--social-color);
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+      display: block;
+    }
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: var(--bg-color);
+      border-top: .1rem solid rgba(0, 0, 0, .2);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+      display: none;
+    }
+    .navbar.active {
+      display: block;
+    }
+    .navbar a {
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+      color: var(--text-color);
+    }
+    .navbar a:nth-child(1),
+    .navbar a:nth-child(2) {
+      color: var(--text-color);
+    }
+    .navbar a.active {
+      color: var(--main-color);
+    }
+    .navbar a::before {
+      display: none;
+    }
+    .home {
+      justify-content: center;
+      text-align: center;
+    }
+    .home-content h3 {
+      font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+      font-size: 5rem;
+    }
+
+    .home-content .social-media a {
+      margin: 2.5rem .75rem 3rem;
+    }
+
+    .home .profession-container {
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .home .profession-container .profession-box {
+      position: fixed;
+      top: 450px;
+      left: 0;
+      width: 100%;
+    }
+    .home .profession-box .profession {
+      padding: 0 13px;
+      left: auto;
+      transform-origin: 0;
+    }
+    .home .profession-box .profession:nth-child(1) {
+      transform: rotate(-90deg) translate(-120px, -210px);
+    }
+    .home .profession-box .profession:nth-child(1) i {
+      margin-right: 0;
+    }
+    .home .profession-box .profession:nth-child(2) {
+      transform: rotate(0deg) translate(0, -325px);
+    }
+    .home .profession-box .profession:nth-child(3) {
+      transform: rotate(90deg) translate(-115px, -450px);
+    }
+    .home .profession-box .profession:nth-child(4) {
+      transform: rotate(180deg) translate(-220px, -325px);
+    }
+    .home .profession-box .circle {
+      position: fixed;
+      width: 670px;
+      height: 670px;
+      z-index: -1;
+    }
+    .home .profession-container .overlay {
+      position: fixed;
+      top: 70rem;
+      left: 50%;
+      right: 0;
+      transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+      border-width: 23.9rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .home .profession-box .profession:nth-child(1) {
+      transform: rotate(-90deg) translate(-110px, -220px);
+    }
+    .home .profession-box .profession:nth-child(2) {
+      transform: rotate(0deg) translate(5px, -325px);
+    }
+
+    .home .profession-box .profession:nth-child(3) {
+      transform: rotate(90deg) translate(-105px, -440px);
+    }
+    .home .profession-box .profession:nth-child(4) {
+      transform: rotate(180deg) translate(-210px, -325px);
+    }
+    .home .profession-container .overlay {
+      top: 80rem;
+    }
+}
+
+@media (max-width: 315px) {
+    .home-content h1 {
+      font-size: 4.5rem;
+    }
+}
+</style>
 </html>
