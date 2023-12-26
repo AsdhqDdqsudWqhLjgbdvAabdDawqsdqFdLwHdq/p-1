@@ -646,7 +646,7 @@ menuIcon.onclick = () => {
    }
     
    for (i=0;i<=snowmax;i++) {
-       document.body.insertAdjacentHTML("beforeend", "<span id='s"+i+"' style='pointer-events:none;user-select:none;position:fixed;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+    document.body.insertAdjacentHTML("beforeend", "<span id='s"+i+"' style='pointer-events:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-o-user-select:none; user-select:none;position:fixed;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
    }
    window.onload=initsnow    
 </script>
