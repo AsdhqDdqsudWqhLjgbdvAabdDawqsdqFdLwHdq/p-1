@@ -33,7 +33,7 @@
   </header>
   <section class="home" id="home">
       <div class="home-content">
-        <img src="assets/img/permach.png" class="home-img">
+        <img src="https://cdn.discordapp.com/avatars/687661528337350705/d3b09787e3d189bd3b928812d7c6239b.webp?size=1024&format=webp&width=0&height=204" class="home-img">
         <h1>Permach</h1>
         <h3>Junior Web Developer</h3>
         <div class="social-media">
@@ -73,7 +73,7 @@
 
 html {
     font-size: 62.5%;
-    overflow: hidden;;
+    overflow-x: hidden;
 }
 
 body {
@@ -151,16 +151,17 @@ section {
 
 .home .home-content {
     max-width: 44rem;
+    position: relative;
 }
 
 .home-content h3 {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     line-height: .3;
 }
 
 .home-content h1 {
-    font-size: 5.6rem;
+    font-size: 3.6rem;
     font-weight: 700;
     margin-bottom: .3rem;
 }
@@ -170,20 +171,28 @@ section {
 }
 
 .home-img {
-  -webkit-animation-name: border;
-	-webkit-animation-duration: 6.0s;
-  -webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-  border-radius: 50%;
-  width: 75%;
-  -moz-user-select: none; 
-  -webkit-user-select: none; 
-  -ms-user-select: none; 
-  -o-user-select: none; 
-  user-select: none;
+    -webkit-animation-name: border;
+	  -webkit-animation-duration: 6.0s;
+    -webkit-animation-iteration-count: infinite;
+  	-webkit-animation-timing-function: linear;
+    border-radius: 50%;
+    width: 75%;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    -o-user-select: none; 
+    user-select: none;
 }
 
 .home-content .social-media {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     -moz-user-select: none; 
     -webkit-user-select: none; 
     -ms-user-select: none; 
@@ -374,7 +383,7 @@ span {
       right: -15%;
     }
     .home-img img {
-      max-width: 420px;
+      max-width: 65%;
     }
 }
 @media (max-width: 1024px) {
@@ -466,13 +475,11 @@ span {
       text-align: center;
     }
     .home-content h3 {
-      font-size: 2.6rem;
+      font-size: 2.2rem;
     }
-
     .home-content h1 {
-      font-size: 5rem;
+      font-size: 3.6rem;
     }
-
     .home .profession-container {
       left: 0;
       width: 100%;
@@ -544,7 +551,7 @@ span {
 
 @media (max-width: 315px) {
     .home-content h1 {
-      font-size: 4.5rem;
+      font-size: 3.6rem;
     }
 }
 </style>
