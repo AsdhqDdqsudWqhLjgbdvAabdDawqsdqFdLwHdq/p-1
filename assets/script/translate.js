@@ -1,14 +1,10 @@
 $(document).ready(function() {
   var translations = {
     en: {
-        home: 'Home',
-        guilds: 'Guilds',
-        meta: 'NoHello',
+      home: 'Home',
     },
     ru: {
       home: 'Главная',
-      guilds: 'Гильдии',
-      meta: 'Мета',
     }
   };    
   var userLanguage = navigator.language || navigator.userLanguage;
