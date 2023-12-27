@@ -90,7 +90,7 @@ body {
     left: 0;
     width: 100%;
     padding: 2rem 7%;
-    background: var(--bg-color);
+    background-color: var(--bg-color);
     display: flex;
     align-items: center;
     z-index: 100;
@@ -407,7 +407,6 @@ span {
       right: -12%;
     }
 }
-
 @media (max-width: 991px) {
     .navbar a:nth-child(1) {
       color: var(--main-color);
@@ -426,7 +425,6 @@ span {
       right: -30%;
     }
 }
-
 @media (max-width: 896px) {
     .home .profession-container .profession-box {
       right: -50%;
@@ -435,7 +433,6 @@ span {
       right: -43%;
     }
 }
-
 @media (max-width: 768px) {
     #menu-icon {
       display: block;
@@ -526,7 +523,6 @@ span {
       border-width: 23.9rem;
     }
 }
-
 @media (max-width: 450px) {
     html {
       font-size: 50%;
@@ -548,7 +544,6 @@ span {
       top: 80rem;
     }
 }
-
 @media (max-width: 315px) {
     .home-content h1 {
       font-size: 3.6rem;
@@ -648,6 +643,6 @@ menuIcon.onclick = () => {
    for (i=0;i<=snowmax;i++) {
     document.body.insertAdjacentHTML("beforeend", "<span id='s"+i+"' style='pointer-events:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-o-user-select:none; user-select:none;position:fixed;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
    }
-   window.onload=initsnow    
+   window.onload=initsnow
 </script>
 </html>
