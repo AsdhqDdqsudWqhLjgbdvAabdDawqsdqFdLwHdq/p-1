@@ -2,9 +2,11 @@ $(document).ready(function() {
   var translations = {
     en: {
       home: 'Home',
+      language: 'EN',
     },
     ru: {
       home: 'Главная',
+      language: 'RU',
     }
   };    
   var userLanguage = navigator.language || navigator.userLanguage;
