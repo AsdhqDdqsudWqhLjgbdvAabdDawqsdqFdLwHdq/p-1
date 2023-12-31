@@ -576,11 +576,6 @@ menuIcon.onclick = () => {
 };
 </script>
 <script>
-	particlesJS.load("particles-js", "assets/script/particles.json", function() {
-		console.log("");
-	});
-</script>
-<script>
   let snowmax=35
    
    // Цвета для снежинок. Для каждой конкретной снежинки цвет выбирается случайно из этого массива.
@@ -665,5 +660,10 @@ menuIcon.onclick = () => {
     document.body.insertAdjacentHTML("beforeend", "<span id='s"+i+"' style='pointer-events:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-o-user-select:none; user-select:none;position:fixed;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
    }
    window.onload=initsnow
+</script>
+<script>
+	particlesJS.load("particles-js", "assets/script/particles.json", function() {
+		console.log("");
+	});
 </script>
 </html>
