@@ -8,9 +8,9 @@ $(document).ready(function() {
       home: 'Главная',
       language: 'RU',
     },
-    ua: {
+    uk: {
       home: 'Головний',
-      language: 'UA',
+      language: 'UK',
     }
   };    
   var userLanguage = navigator.language || navigator.userLanguage;
