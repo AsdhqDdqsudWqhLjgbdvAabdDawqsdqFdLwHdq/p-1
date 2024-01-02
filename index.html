@@ -59,12 +59,12 @@
     --logo: #c9c9cb;
     --bg-color: #1d1d1f;
     --text-color: #fdfdfd;
-    --main-color: #fdfdfd;
     --white-color: #fff;
     --hover-color: rgb(255, 123, 222);
     --shadow-color: #2c2c2f;
     --navbar-color: #343436;
     --blue-color: #3f63b4;
+    --darkblue-color: #274aa2;
 }
 
 *::selection {
@@ -125,6 +125,10 @@ body {
     text-align: center;
     font-weight: bold;
     margin-right: 3.5rem;
+}
+
+.navbar a:hover {
+    color: var(--darkblue-color);
 }
 
 #menu-icon {
@@ -272,10 +276,10 @@ section {
 
 @media (max-width: 1200px) {
     .navbar a:nth-child(1) {
-      color: var(--main-color);
+      color: var(--white-color);
     }
     .navbar a.active::before {
-      background: var(--main-color);
+      background: var(--white-color);
       opacity: .7;
     }
     html {
@@ -284,10 +288,10 @@ section {
 }
 @media (max-width: 1100px) {
     .navbar a:nth-child(1) {
-      color: var(--main-color);
+      color: var(--white-color);
     }
     .navbar a.active::before {
-      background: var(--main-color);
+      background: var(--white-color);
       opacity: .7;
     }
     .home-img img {
@@ -296,10 +300,10 @@ section {
 }
 @media (max-width: 1024px) {
     .navbar a:nth-child(1) {
-      color: var(--main-color);
+      color: var(--white-color);
     }
     .navbar a.active::before {
-      background: var(--main-color);
+      background: var(--white-color);
       opacity: .7;
     }
     .header {
@@ -308,10 +312,10 @@ section {
 }
 @media (max-width: 991px) {
     .navbar a:nth-child(1) {
-      color: var(--main-color);
+      color: var(--white-color);
     }
     .navbar a.active::before {
-      background: var(--main-color);
+      background: var(--white-color);
       opacity: .7;
     }
     .home .home-content {
