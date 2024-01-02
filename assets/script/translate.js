@@ -7,10 +7,6 @@ $(document).ready(function() {
     ru: {
       home: 'Главная',
       language: 'RU',
-    },
-    uk: {
-      home: 'Головний',
-      language: 'UK',
     }
   };    
   var userLanguage = navigator.language || navigator.userLanguage;
