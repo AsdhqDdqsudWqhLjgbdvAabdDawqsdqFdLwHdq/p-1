@@ -8,6 +8,10 @@ $(document).ready(function() {
       home: 'Главная',
       language: 'RU',
     }
+    ua: {
+      home: 'Головний',
+      language: 'UA',
+    },
   };    
   var userLanguage = navigator.language || navigator.userLanguage;
   var currentLanguage = translations[userLanguage.substr(0, 2)] ? userLanguage.substr(0, 2) : 'en';
