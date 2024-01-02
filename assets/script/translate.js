@@ -7,11 +7,11 @@ $(document).ready(function() {
     ru: {
       home: 'Главная',
       language: 'RU',
-    }
-    uk: {
-      home: 'Головний',
-      language: 'UK',
     },
+    ua: {
+      home: 'Головний',
+      language: 'UA',
+    }
   };    
   var userLanguage = navigator.language || navigator.userLanguage;
   var currentLanguage = translations[userLanguage.substr(0, 2)] ? userLanguage.substr(0, 2) : 'en';
