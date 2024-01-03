@@ -39,9 +39,10 @@
         <h1>Permach</h1>
         <h3>Junior Web Developer</h3>
         <div class="social-media">
-          <a href="//discordapp.com/users/687661528337350705/" target="_blank"><i class="bx bxl-discord-alt"></i></a>
-          <a href="//steamcommunity.com/id/permachdev/" target="_blank"><i class="bx bxl-steam"></i></a>
+          <a href="//github.com/permachdev" target="_blank"><i class="bx bxl-github"></i></a>
           <a href="//t.me/permachdev/" target="_blank"><i class="bx bxl-telegram"></i></a>
+          <a href="//steamcommunity.com/id/permachdev/" target="_blank"><i class="bx bxl-steam"></i></a>
+          <a href="//discordapp.com/users/687661528337350705/" target="_blank"><i class="bx bxl-discord-alt"></i></a>
         </div>
       </div>
 </body>
@@ -151,11 +152,8 @@ section {
     display: flex;
     align-items: center;
     text-align: center;
-}
-
-.home .home-content {
-    max-width: 100rem;
     position: relative;
+    height: 85vh;
 }
 
 .home-content h3 {
@@ -188,15 +186,6 @@ section {
     user-select: none;
 }
 
-.home-img img {
-    position: absolute;
-    bottom: 0;
-    right: 40px;
-    pointer-events: none;
-    max-width: 550px;
-    max-height: 100vh;
-}
-
 .home-content .social-media {
     position: fixed;
     bottom: 0;
@@ -217,9 +206,8 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 7rem;
-    height: 10rem;
-    font-size: 5rem;
+    width: 9rem;
+    font-size: 6rem;
     color: var(--social-color);
     transition: .5s ease;
     -moz-user-select: none; 
@@ -340,13 +328,17 @@ section {
       font-size: 5rem;
     }
 }
-@media (max-width: 315px) {
+@media (max-width: 375px) {
   .home-content h3 {
       font-size: 2rem;
     }
     .home-content h1 {
       font-size: 4rem;
     }
+    .home-content .social-media a {
+    width: 9rem;
+    font-size: 5rem;
+}
 }
 </style>
 <script>
