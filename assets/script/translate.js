@@ -2,10 +2,12 @@ $(document).ready(function() {
   var translations = {
     en: {
       home: 'Home',
+      project: 'Project',
       language: 'EN',
     },
     ru: {
       home: 'Главная',
+      project: 'Проект',
       language: 'RU',
     }
   };    
